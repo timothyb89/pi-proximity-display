@@ -1,0 +1,10 @@
+[package]
+name = "vcnl4010"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bitfield-struct = "0.10.1"
+bytes = "1.10.1"
+i2cdev = "0.6.1"
+thiserror = "2.0.12"

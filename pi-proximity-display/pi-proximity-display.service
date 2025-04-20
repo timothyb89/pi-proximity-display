@@ -1,0 +1,13 @@
+[Unit]
+Description=radio
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/pi-proximity-display --proximity-range 2930..2975 --ambient-light-range 10..100 --brightness-range 1..31
+
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,17 @@
+[package]
+name = "pi-proximity-display"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+vcnl4010 = { path = "../vcnl4010" }
+
+color-eyre = "0.6.3"
+clap = { version = "4.5.37", features = ["derive"] }
+tracing = "0.1.40"
+tracing-error = "0.2.0"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+serde_json = "1.0.140"
+serde_derive = "1.0.219"
+serde = "1.0.219"
+humantime = "2.2.0"
